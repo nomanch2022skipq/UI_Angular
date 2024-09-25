@@ -1,0 +1,18 @@
+<div class="py-5 text-3xl flex justify-center items-center flex-col">
+    <h2>Our Teams</h2>
+    <p class="border-4 w-44 rounded-xl border-{{sharedService.mainColor}}"></p>
+</div>
+
+<div  class="flex flex-wrap flex-row justify-center mx-auto px-4 container text-white">
+    <div *ngFor="let team of teams" class="card justify-center items-center flex flex-col mx-10 p-4 m-5 rounded-m bg-{{sharedService.mainColor}}">
+        <img class="w-[300px]" src='{{team.image}}' alt="Team Member 1">
+        <h3 class="pt-3 font-bold">{{team.name}}</h3>
+        <p>{{team.position}}</p>
+        <div class="socials_links">
+            <fa-icon class="px-2" [icon]="faFacebook"></fa-icon>
+            <fa-icon class="px-2" [icon]="faInstagram"></fa-icon>
+            <fa-icon class="px-2" [icon]="faTwitter"></fa-icon>
+        </div>
+    </div>
+</div>
+
