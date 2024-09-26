@@ -4,11 +4,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCoffee, faMarsAndVenus, faBars } from '@fortawesome/free-solid-svg-icons';
 import { SharedService } from '../../services/shared.service';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [MatIconModule, FontAwesomeModule, CommonModule],
+  imports: [MatIconModule, FontAwesomeModule, CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

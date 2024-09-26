@@ -1,0 +1,13 @@
+<footer class="w-full bg-custom-primary text-white">
+    <div class="flex max-w-screen-xl pt-4 flex-wrap mx-auto justify-between ">
+        <div *ngFor="let section of companySections" class="flex flex-col items-center w-full md:w-1/4 p-4">
+            <h1 class="text-2xl">{{ section.title }}</h1>
+            <div class="flex flex-col py-2">
+                <a *ngFor="let link of section.links" class="py-1">{{ link }}</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="text-center py-4 text-md">Copyright © 2021 MyLogo. All rights reserved.</p>
+    </div>
+</footer>

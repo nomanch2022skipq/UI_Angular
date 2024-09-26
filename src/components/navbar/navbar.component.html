@@ -1,16 +1,16 @@
-<div class="shadow-md h-auto" >
+<div class="shadow-md h-auto fixed top-0 z-10 w-full bg-gray-50" >
     <nav class="flex py-6 justify-between items-center mx-28">
-        <div class="font-bold text-3xl">My<Span class="text-{{sharedService.mainColor}}" >Logo</Span></div>
+        <div class="font-bold text-3xl">My<Span class="text-custom-primary" >Logo</Span></div>
         <div class="text-[1rem] hidden xl:block">
-            <a class="px-3 hover:text-slate-400" href="#">Home</a>
-            <a class="px-3 hover:text-slate-400" href="#">Contact Us</a>
+            <a class="px-3 hover:text-slate-400" [routerLink]="['']" routerLinkActive="router-link-active" >Home</a>
+            <a class="px-3 hover:text-slate-400" [routerLink]="['/contactUs']" routerLinkActive="router-link-active" >Contact Us</a>
             <a class="px-3 hover:text-slate-400" href="#">Privicy Policy</a>
             <a class="px-3 hover:text-slate-400" href="#">Pricing</a>
         </div>
         <div class="hidden xl:block">
             <button>
-                <span class="px-7 py-3 rounded-md bg-{{sharedService.mainColor}} hover:bg-{{sharedService.hoverMainColor}} text-white text-lg">Login</span>
-                <button class="ml-2 text-xl px-6 py-2 rounded-full bg-white text-{{sharedService.mainColor}} hover:text-{{sharedService.hoverMainColor}}">Sign Up</button>
+                <span class="px-7 py-3 rounded-md bg-custom-primary hover:bg-custom-primary-hover text-white text-lg">Login</span>
+                <button class="ml-2 text-xl px-6 py-2 rounded-full bg-white text-custom-primary hover:text-custom-primary-hover">Sign Up</button>
             </button>
         </div>
         <fa-icon class="text-2xl sm:block xl:hidden" [icon]="faBars"></fa-icon>
